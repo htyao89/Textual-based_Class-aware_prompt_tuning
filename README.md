@@ -1,1 +1,1 @@
-# Textual-based_Class-aware_prompt_tuning
+# Textual-based_Class-aware_Prompt_tuning
