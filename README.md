@@ -26,18 +26,12 @@ After that, run `pip install -r requirements.txt` under `TCP/` to install a few 
 
 Follow [DATASETS.md](DATASETS.md) to install the datasets.
 
-## Adjust `EPS` in AdaW optimzier
+## [Importantly]Adjust `EPS` in AdaW optimzier
+Since using the standard AdaW on the fp16 data will produce NaN loss, we thus set the EPS in AdaW as 1e-3. 
+
+Line 80: ./Dassl.pytorch/dassl/optim/optimizer.py
+
 ```
-./Dassl.pytorch/dassl/optim/optimizer.py
-
-if optim == "adam":
-    optimizer = torch.optim.Adam(
-        param_groups,
-        lr=lr,
-        weight_decay=weight_decay,
-        betas=(adam_beta1, adam_beta2),
-    )
-
 if optim == "adam":
     optimizer = torch.optim.Adam(
         param_groups,
