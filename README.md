@@ -26,8 +26,7 @@ After that, run `pip install -r requirements.txt` under `TCP/` to install a few 
 
 Follow [DATASETS.md](DATASETS.md) to install the datasets.
 
-```
-# Adjust `EPS` in AdaW optimzier
+## Adjust `EPS` in AdaW optimzier
 ```
 ./Dassl.pytorch/dassl/optim/optimizer.py
 
@@ -47,7 +46,7 @@ if optim == "adam":
         betas=(adam_beta1, adam_beta2),
         eps=1e-3,
     )
-
+```
 
 
 
