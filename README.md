@@ -22,7 +22,7 @@ conda install pytorch torchvision cudatoolkit=10.1 -c pytorch
 python setup.py develop
 ```
 
-After that, run `pip install -r requirements.txt` under `TCP/` to install a few more packages required by [CLIP](https://github.com/openai/CLIP) (this should be done when `dassl` is activated). Then, you are ready to go.
+After that, run `pip install -r requirements.txt` under `Textual-based_Class-aware_prompt_tuning/` to install a few more packages required by [CLIP](https://github.com/openai/CLIP) (this should be done when `dassl` is activated). Then, you are ready to go.
 
 Follow [DATASETS.md](DATASETS.md) to install the datasets.
 
