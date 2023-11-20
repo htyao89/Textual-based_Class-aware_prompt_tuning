@@ -20,7 +20,6 @@ OPTIM:
   WARMUP_EPOCH: 1
   WARMUP_TYPE: "constant"
   WARMUP_CONS_LR: 1e-5
-  EPS: 1e-3
 
 TRAIN:
   PRINT_FREQ: 5
