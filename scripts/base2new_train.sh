@@ -3,7 +3,7 @@
 cd ..
 
 # custom config
-DATA=/data/yht/data/cl/data/
+DATA= DataPath
 TRAINER=TCP
 WEIGHT=1.0
 
