@@ -161,9 +161,6 @@ def main(args):
         trainer.test()
         return
 
-    #args.model_dir = 'output_0620_xd/base2new/train_base/imagenet/shots_4_8.0/KgCoOp/rn50_ep100/seed1'
-    #args.load_epoch=50
-    trainer.load_model(args.model_dir, epoch=args.load_epoch)
     if not args.no_train:
         trainer.train()
 
