@@ -3,9 +3,9 @@
 cd ..
 
 # custom config
-DATA=/data/yht/data/cl/data/
+DATA=XXXXX
 TRAINER=TCP
-WEIGHT=1.0
+WEIGHT=8.0
 
 CFG=vit_b16_ep100_ctxv1
 CTP=end  # class token position (end or middle)
