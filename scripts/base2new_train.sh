@@ -3,7 +3,11 @@
 cd ..
 
 # custom config
+<<<<<<< HEAD
 DATA=XXXXX
+=======
+DATA= DataPath
+>>>>>>> 68e004255b61608f0f80c4cdc804c2a5b13a98e7
 TRAINER=TCP
 WEIGHT=8.0
 
