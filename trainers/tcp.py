@@ -38,25 +38,6 @@ def load_clip_to_cpu(cfg):
 
     return model
 
-def load_clip_to_cpu_ori():
-    backbone_names=['RN50','RN101','ViT-B/32','ViT-B/16','ViT-L/14','ViT-L/14@336px']
-    dims=[1024,1024,512,512,768,768]
-    ind=4
-    print(backbone_names[ind])
-    url = clip_ori._MODELS[backbone_names[ind]]
-    model_path = clip_ori._download(url)
-
-    try:
-        # loading JIT archive
-        model = torch.jit.load(model_path, map_location="cpu").eval()
-        state_dict = None
-
-    except RuntimeError:
-        state_dict = torch.load(model_path, map_location="cpu")
-
-    model = clip.build_model(state_dict or model.state_dict())
-
-    return model,dims[ind]
 
 CUSTOM_TEMPLATES_ori = {
     "OxfordPets": "a photo of a {}, a type of pet.",
@@ -64,7 +45,6 @@ CUSTOM_TEMPLATES_ori = {
     "FGVCAircraft": "a photo of an aircraft {}.",
     "DescribableTextures": "a photo of a {}, a type of texture.",
     "EuroSAT": "a centered satellite photo of {}.",
-    #"EuroSAT": "a photo of a {}.",
     "StanfordCars": "a photo of a {}.",
     "Food101": "a photo of a {}, a type of food.",
     "SUN397": "a photo of a {}.",
