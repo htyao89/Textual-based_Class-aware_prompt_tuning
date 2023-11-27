@@ -3,13 +3,9 @@
 cd ..
 
 # custom config
-<<<<<<< HEAD
 DATA=XXXXX
-=======
-DATA= DataPath
->>>>>>> 68e004255b61608f0f80c4cdc804c2a5b13a98e7
 TRAINER=TCP
-WEIGHT=8.0
+WEIGHT=1.0
 
 CFG=vit_b16_ep100_ctxv1
 CTP=end  # class token position (end or middle)
@@ -27,7 +23,7 @@ do
         echo "Results are available in ${DIR}. Skip this job"
     else
         echo "Run this job and save the output to ${DIR}"
-        CUDA_VISIBLE_DEVICES=7 python train.py \
+        CUDA_VISIBLE_DEVICES=0 python train.py \
         --root ${DATA} \
         --seed ${SEED} \
         --trainer ${TRAINER} \
@@ -56,7 +52,7 @@ do
         echo "Results are available in ${DIR}. Skip this job"
     else
         echo "Run this job and save the output to ${DIR}"
-        CUDA_VISIBLE_DEVICES=7 python train.py \
+        CUDA_VISIBLE_DEVICES=0 python train.py \
         --root ${DATA} \
         --seed ${SEED} \
         --trainer ${TRAINER} \
@@ -85,7 +81,7 @@ do
         echo "Results are available in ${DIR}. Skip this job"
     else
         echo "Run this job and save the output to ${DIR}"
-        CUDA_VISIBLE_DEVICES=7 python train.py \
+        CUDA_VISIBLE_DEVICES=0 python train.py \
         --root ${DATA} \
         --seed ${SEED} \
         --trainer ${TRAINER} \
@@ -114,7 +110,7 @@ do
         echo "Results are available in ${DIR}. Skip this job"
     else
         echo "Run this job and save the output to ${DIR}"
-        CUDA_VISIBLE_DEVICES=7 python train.py \
+        CUDA_VISIBLE_DEVICES=0 python train.py \
         --root ${DATA} \
         --seed ${SEED} \
         --trainer ${TRAINER} \
