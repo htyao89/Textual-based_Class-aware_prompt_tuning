@@ -1,7 +1,7 @@
 # How to Run
 
 ## How to Install
-This code is built on top of the toolbox [Dassl.ProGrad.pytorch](https://github.com/BeierZhu/Prompt-align/tree/main/Dassl.ProGrad.pytorch). You can prepare the environment as follows:
+This code is built on top of the toolbox [Dassl](https://github.com/KaiyangZhou/Dassl.pytorch). You can prepare the environment as follows:
 
 ```
 # Create a conda environment
