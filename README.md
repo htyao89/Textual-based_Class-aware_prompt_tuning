@@ -1,4 +1,8 @@
-## TCP: Textual-based Class-aware Prompt tuning for Visual-Language Model
+## TCP: Textual-based Class-aware Prompt tuning for Visual-Language Model[CVPR24]
+
+> [**TCP: Textual-based Class-aware Prompt tuning for Visual-Language Model**](https://arxiv.org/abs/2311.18231)<br>
+> Hantao Yao, Rui Zhang, Changsheng Xu
+
 ## How to Install
 This code is built on top of the toolbox [Dassl](https://github.com/KaiyangZhou/Dassl.pytorch). You can prepare the environment as follows:
 
@@ -67,5 +71,16 @@ To get the average performance on the new classes, run
 
 ```bash
 python parse_test_res.py output/base2new/test_new/stanford_cars/shots_16/CoCoOp/rn50_ep100 --test-log
+```
+
+## Citation
+If you use our work, please consider citing:
+```bibtex
+@inproceedings{TCP24,
+    title={TCP: Textual-based Class-aware Prompt tuning for Visual-Language Model},
+    author={Hantao Yao, Rui Zhang, Changsheng Xu},
+    booktitle={The IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+    year={2024}
+}
 ```
 
